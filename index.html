@@ -16,42 +16,52 @@
     <h3>Halaman lain</h3>
     <a href="https://library.usu.ac.id/">perpustakaan usu arif budiman</a>
 
-    <!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Contact Page</title>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <div class="contact-details">
-                    <img src="assets/images/asset6.svg">
-                    <h1>Arif Budiman</h1>
-                    <p>arifbudiman3044197256@gmail.com</p>
-                    <p>Indonesia</p>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <span>Contact Me</span>
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Enter Message"></textarea>
-                        <input type="submit" value="Send">
-                    </form>
-                </div>
+    <h2>Hubungi Kami</h2>
+    <form action="mailto:arifbudiman3044197256@email.com" method="post" enctype="text/plain">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            </div>
-        </div>
-    </div>
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
 </body>
 </html>
-
-</body>
-</html>
-
 
