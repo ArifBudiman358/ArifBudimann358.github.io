@@ -1,6 +1,35 @@
-body {
-    background-image: url('background.jpg'); /* Ganti dengan URL gambar */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body {background-color: #467a4f;}
+h1 {font-size:36pt;}
+h2 {color:black}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ccd6d0;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  h3 {
+    text-align: right;
+  }
