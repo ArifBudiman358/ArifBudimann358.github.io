@@ -50,3 +50,17 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    white-space: nowrap;
+    font-size: 24px;
+}
