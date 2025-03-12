@@ -1,0 +1,16 @@
+let text = document.getElementById("text");
+let pos = 0;
+
+function bergerak() {
+    pos += 2; // Kecepatan gerak
+    text.style.left = pos + "px";
+
+    if (pos < window.innerWidth) {
+        requestAnimationFrame(bergerak);
+    } else {
+        pos = -text.offsetWidth; // Reset posisi jika sudah keluar layar
+        requestAnimationFrame(bergerak);
+    }
+}
+
+bergerak();
